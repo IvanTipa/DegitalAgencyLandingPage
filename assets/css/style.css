@@ -1,0 +1,132 @@
+body {
+    background-color: #F3FEFF;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.box {
+    max-width: 1440px;
+    background-color: #F3FEFF;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+
+/* btns */
+
+.btnDark {
+    background: #35AFBF;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #35AFBF;
+    transition: 1s;
+}
+
+.btnLight {
+    font-size: 16px;
+    color: #35AFBF;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 1px solid #35AFBF;
+    transition: 1s;
+}
+
+.btnLogin {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 15px 30px;
+}
+
+
+.btnStart {
+    display: inline-flex;
+    padding: 15px 35px;
+    align-items: flex-start;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+/* NAV */
+
+.promo {
+    width: 100%;
+    background-image: url(/assets/image/Background.png);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+}
+
+.headerNav {
+    max-width: 100%;
+    height: 50px;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navList {
+    display: flex;
+    list-style: none;
+}
+
+.navList li a {
+    text-decoration: none;
+    color: #969999;
+    padding-right: 45px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+}
+
+.itemLink::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 63%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 1s ease;
+}
+
+.itemLink:hover {
+    color: #35AFBF;
+}
+
+.itemLink:hover::after {
+    background-color: #35AFBF;
+}
+
+/* PROMO HEADER */
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.headerTitle {
+    max-width: 500px;
+    font-size: 51px;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.headerSubtitle {
+    color: #707273;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}

@@ -15,3 +15,16 @@ btnsDark.forEach(btn => {
         btn.classList.add('btnDark');
     });
 });
+
+btnsLight.forEach(btn => {
+
+    btn.addEventListener('mouseover', () => {
+        btn.classList.remove('btnLight');
+        btn.classList.add('btnDark');
+    });
+
+    btn.addEventListener('mouseout', () => {
+        btn.classList.remove('btnDark');
+        btn.classList.add('btnLight');
+    });
+});
